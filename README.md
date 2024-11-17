@@ -2,6 +2,8 @@
 
 ## Base test code
 
+[see test directory](https://github.com/JiHongKim98/kotest-lifecycle/tree/main/src/test/kotlin)
+
 ```kotlin
 class LifeCycleTest : BehaviorSpec({
 
@@ -41,6 +43,8 @@ class LifeCycleTest : BehaviorSpec({
 ## SingleInstance (DEFAULT)
 
 ```
+# isolation (SingleInstance)
+
 | >> given1 when1 then1 || 
 | >> given1 when1 then1 || then2 || 
 do after container listener
@@ -55,6 +59,8 @@ do after container listener
 ## InstancePerLeaf
 
 ```
+# isolation (InstancePerLeaf)
+
 | >> given1 when1 then1 || 
 do after container listener
 do after container listener
@@ -76,6 +82,8 @@ do after container listener
 ## InstancePerTest
 
 ```
+# isolation (InstancePerTest)
+
 | >> given1 when1 then1 || 
 do after container listener
 do after container listener
